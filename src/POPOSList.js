@@ -1,13 +1,15 @@
-import React from 'react'
-import POPOSSpace from './POPOSSpace';
+import React from 'react';
+import POPOSSpace from './POPOSSpace'
 
 export default function POPOSList() {
-	return <div>
-		<POPOSSpace name="50 California Street" address="50 California St." image="50-california-st.jpg"/>
-		<POPOSSpace name="100-pine" address="100-pine" image="100-pine.jpg"/>
-		<POPOSSpace name="525-market-street-plaza" address="525-market-street-plaza" image="525-market-street-plaza.jpg" />
-		<POPOSSpace name="transamerica-redwood-park" address="transamerica-redwood-park" image="transamerica-redwood-park.jpg" />
-		<POPOSSpace name="555-california" address="555-california" image="555-california.jpg" />
-		<POPOSSpace name="citigroup-center" address="citigroup-center" image="citigroup-center.jpg" />
-	</div>
+    return (
+        <div>
+            <POPOSSpace name="10-california-st" address="10-california-st" image="10-california-st.jfif"/>
+            <POPOSSpace name="12-california-st" address="12-california-st" image="12-california-st.jfif" />
+            <POPOSSpace name="50-california-st" address="50-california-st" image="50-california-st.jfif" />
+            <POPOSSpace name="60-california-st" address="60-california-st" image="60-california-st.jfif" />
+            <POPOSSpace name="70-california-st" address="70-california-st" image="70-california-st.jfif" />
+            <POPOSSpace name="80-california-st" address="80-california-st" image="80-california-st.jfif" />
+        </div>
+    )
 }

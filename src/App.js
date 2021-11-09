@@ -1,11 +1,11 @@
 import Title from './Title'
+import POPOSList from './POPOSList'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
           <Title />
+          <POPOSList />
       </div>
   );
 }
-
-export default App;
