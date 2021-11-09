@@ -1,11 +1,12 @@
 import React from 'react';
+import './POPOSSpace.css';
 
 export default function POPOSSpace(props) {
 
     const {name,image,address} = props
 
     return (
-        <div>
+        <div className="POPOSSpace">
             <img src={`${process.env.PUBLIC_URL}images/${image}`}
                 width="300"
                 height="300"

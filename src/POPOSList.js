@@ -1,9 +1,10 @@
 import React from 'react';
-import POPOSSpace from './POPOSSpace'
+import POPOSSpace from './POPOSSpace';
+import './POPOSList.css';
 
 export default function POPOSList() {
     return (
-        <div>
+        <div className="POPOSList">
             <POPOSSpace name="10-california-st" address="10-california-st" image="10-california-st.jfif"/>
             <POPOSSpace name="12-california-st" address="12-california-st" image="12-california-st.jfif" />
             <POPOSSpace name="50-california-st" address="50-california-st" image="50-california-st.jfif" />
