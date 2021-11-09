@@ -3,7 +3,7 @@ import './Title.css'
 
 export default function Title() {
     return <div className='Title'>
-        <h1>SFPOPOS</h1>
-        <div className="Title-Subtitle">San Franciscos Privately Owned Public Spaces</div>
+        <h1>SeaFood Recipes</h1>
+        <div className="Title-Subtitle">(Treat your taste buds)</div>
         </div>
 }

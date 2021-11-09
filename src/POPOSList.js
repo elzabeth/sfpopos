@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import POPOSSpace from './POPOSSpace';
 import './POPOSList.css';
 
 export default function POPOSList() {
+
+    const [items, setItems] = useState([])
+
+    useEffect(() => {
+        axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood")
+            .then(response => {
+                setItems(response.data.meals)
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    }, [])
+
+    const itemslist = items.map(({ strMeal, strMealThumb, idMeal }) => {
+        return <POPOSSpace key={idMeal} id={idMeal} name={strMeal} image={strMealThumb} />
+    })
+
     return (
         <div className="POPOSList">
-            <POPOSSpace name="10-california-st" address="10-california-st" image="10-california-st.jfif"/>
-            <POPOSSpace name="12-california-st" address="12-california-st" image="12-california-st.jfif" />
-            <POPOSSpace name="50-california-st" address="50-california-st" image="50-california-st.jfif" />
-            <POPOSSpace name="60-california-st" address="60-california-st" image="60-california-st.jfif" />
-            <POPOSSpace name="70-california-st" address="70-california-st" image="70-california-st.jfif" />
-            <POPOSSpace name="80-california-st" address="80-california-st" image="80-california-st.jfif" />
+            {itemslist}
         </div>
     )
 }
