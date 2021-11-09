@@ -1,13 +1,10 @@
-import React from 'react';
-import Title from './Title';
-import POPOSList from './POPOSList';
+import Title from './Title'
 
 function App() {
   return (
-      <div className="App">
+    <div className="App">
           <Title />
-          <POPOSList />
-    </div>
+      </div>
   );
 }
 
